@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "9675009008",
+    "project_id": "note-pro-e86b3",
+    "storage_bucket": "note-pro-e86b3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:9675009008:android:a531d80989a5defd89cb35",
+        "android_client_info": {
+          "package_name": "com.example.notespro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "9675009008-9i0822bjkn15ltrus5nlii6b8ec52tj5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.notespro",
+            "certificate_hash": "77bf83ca2d73369bab6e4696dffd6f7fa00bf12c"
+          }
+        },
+        {
+          "client_id": "9675009008-8mbi3uc62ccvql0lhsskuq8ala80tb9f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNjMvVZnXqGARqV-8b79ETJH9oOqyWFY8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "9675009008-8mbi3uc62ccvql0lhsskuq8ala80tb9f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
