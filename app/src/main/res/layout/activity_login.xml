@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginVertical="16dp"
+    android:layout_marginHorizontal="32dp"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="42dp"
+        android:id="@+id/login_icon"
+        android:src="@drawable/login"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_icon"
+        android:id="@+id/hello_text"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello"
+            android:textStyle="bold"
+            android:textSize="28dp"
+            android:textColor="@color/colorBal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome Back"
+            android:textStyle="bold"
+            android:textSize="32dp"
+            android:textColor="@color/colorBal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sing_up_form"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Email_edit_text"
+                android:inputType="textEmailAddress"
+                android:hint="Email Id"
+                android:textSize="20sp"
+                android:background="@drawable/ronded_conner"
+                android:padding="16dp"
+                android:layout_marginTop="12dp"
+                android:autofillHints="" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/password_edit_text"
+                android:inputType="textPassword"
+                android:hint="Password"
+                android:textSize="20sp"
+                android:background="@drawable/ronded_conner"
+                android:padding="16dp"
+                android:layout_marginTop="12dp"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:text="Log IN"
+                android:layout_marginTop="30dp"
+                android:textSize="16sp"
+                android:id="@+id/login_button"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/colorWhite"
+                />
+
+            <ProgressBar
+                android:layout_width="24dp"
+                android:layout_height="64dp"
+                android:id="@+id/Progress_Bar"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_margin="12dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have an account?"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:id="@+id/create_account_text_button"
+                android:text="Create account"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</RelativeLayout>
