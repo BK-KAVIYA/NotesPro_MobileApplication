@@ -7,11 +7,14 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.app.DownloadManager;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ListView;
+import android.widget.PopupMenu;
 
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.Query;
 
 public class MainActivity extends AppCompatActivity {
@@ -37,7 +40,22 @@ public class MainActivity extends AppCompatActivity {
         menueButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                PopupMenu popupMenu=new PopupMenu(MainActivity.this,menueButton);
+                popupMenu.getMenu().add("Logout");
+                popupMenu.show();
+                popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    @Override
+                    public boolean onMenuItemClick(MenuItem item) {
+                        if (item.getTitle() == "Logout") {
+                            FirebaseAuth.getInstance().signOut();
+                            startActivity(new Intent(MainActivity.this,LoginActivity.class));
+                            finish();
+                            return true;
 
+                        }
+                        return false;
+                    }
+                });
             }
         });
         setupRecycleView();
