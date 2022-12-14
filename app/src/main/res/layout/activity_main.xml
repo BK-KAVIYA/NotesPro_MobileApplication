@@ -47,7 +47,9 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:background="?attr/selectableItemBackgroundBorderless"
-        android:tint="@color/colorWhite"/>
+        android:tint="@color/colorBal"
+        />
+
 
 
 

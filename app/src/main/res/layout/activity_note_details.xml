@@ -66,4 +66,18 @@
             android:textColor="@color/colorBal"/>
     </LinearLayout>
 
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/title_bar_layout"
+        android:background="@drawable/ronded_conner"
+        android:backgroundTint="@color/colorWhite"
+        android:text="Delete Note"
+        android:visibility="gone"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/delete_button"/>
+
+
 </RelativeLayout>
