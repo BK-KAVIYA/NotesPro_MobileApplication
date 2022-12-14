@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/note_title_texy_view"
+        android:text="Note Title"
+        android:textColor="@color/colorBal"
+        android:textSize="24sp"
+        android:layout_marginVertical="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/note_content_texy_view"
+        android:text="This can be note content that can be long"
+        android:textSize="17sp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_marginVertical="4dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/note_timestamp_texy_view"
+        android:text="Time stamp"
+        android:textSize="14sp"
+        android:gravity="right"
+        android:layout_marginVertical="4dp"/>
+
+
+</LinearLayout>
